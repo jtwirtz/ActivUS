@@ -22,7 +22,7 @@ create a new branch everytime you want to implement a new feature.
 * Open up terminal
 * run this commands:
   * cd Desktop
-  * cd sportsApp
+  * cd ActivUS
 
 ####When you make edits to the project run these commands:
 * git add .
