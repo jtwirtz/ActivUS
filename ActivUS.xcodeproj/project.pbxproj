@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DFB06741CD6C713007D3F0E /* FindEventNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFB06731CD6C713007D3F0E /* FindEventNewCell.m */; };
 		F606CF2B1CD260000037C166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F606CF2A1CD260000037C166 /* AppDelegate.m */; };
 		F606CF2E1CD260000037C166 /* UserEventsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F606CF2D1CD260000037C166 /* UserEventsVC.m */; };
 		F606CF341CD260000037C166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F606CF321CD260000037C166 /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DFB06721CD6C713007D3F0E /* FindEventNewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindEventNewCell.h; sourceTree = "<group>"; };
+		7DFB06731CD6C713007D3F0E /* FindEventNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindEventNewCell.m; sourceTree = "<group>"; };
 		F606CF231CD260000037C166 /* ActivUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F606CF271CD260000037C166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F606CF291CD260000037C166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				F606CF2D1CD260000037C166 /* UserEventsVC.m */,
 				F64E7A5A1CD56E0C00973435 /* LoginVC.h */,
 				F64E7A5B1CD56E0C00973435 /* LoginVC.m */,
+				7DFB06721CD6C713007D3F0E /* FindEventNewCell.h */,
+				7DFB06731CD6C713007D3F0E /* FindEventNewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A2F23E1CD6B80700D7C952 /* main.m in Sources */,
+				7DFB06741CD6C713007D3F0E /* FindEventNewCell.m in Sources */,
 				F606CF2B1CD260000037C166 /* AppDelegate.m in Sources */,
 				F606CF2E1CD260000037C166 /* UserEventsVC.m in Sources */,
 				F64E7A5C1CD56E0C00973435 /* LoginVC.m in Sources */,
