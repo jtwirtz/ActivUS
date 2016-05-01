@@ -11,4 +11,7 @@
 @interface LoginVC : UIViewController
 
 - (IBAction)loginWithFacebook:(UIButton *)sender;
+
+-(void)showSuccessView;
+
 @end

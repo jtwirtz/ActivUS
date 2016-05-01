@@ -39,4 +39,20 @@
          NSLog(@"%@", fault.detail);
      }];
 }
+
+#pragma mark Segue Methods
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"RegisterViewController"]) {
+        return;
+    }
+}
+
+#pragma mark Public Methods
+
+-(void)showSuccessView
+{
+    
+}
+
 @end

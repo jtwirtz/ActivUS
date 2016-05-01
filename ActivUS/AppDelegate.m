@@ -21,9 +21,18 @@ static NSString *VERSION_NUM = @"v1";
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    BackendlessUser *user = [backendless.userService handleOpenURL:url];
+    if ([user isKindOfClass:[BackendlessUser class]]) {
+        [(LoginVC *)self.window.rootViewController showSuccessView];
+    }
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    backendless.hostURL = @"https://api.backendless.com";
     [backendless initApp:APP_ID secret:SECRET_KEY version:VERSION_NUM];
     return YES;
 }
