@@ -7,6 +7,7 @@
 //
 
 #import "LoginVC.h"
+#import "Backendless.h"
 
 @interface LoginVC ()
 
@@ -26,6 +27,16 @@
 
 #pragma IBAction
 
-- (IBAction)loginWithFacebook:(UIButton *)sender {
+- (IBAction)loginWithFacebook:(UIButton *)sender
+{
+    [backendless.userService
+     easyLoginWithFacebookFieldsMapping:@{@"email":@"email"}
+     permissions:@[@"email"]
+     response:^(id response) {
+         NSLog(@"%@", response);
+     }
+     error:^(Fault *fault) {
+         NSLog(@"%@", fault.detail);
+     }];
 }
 @end

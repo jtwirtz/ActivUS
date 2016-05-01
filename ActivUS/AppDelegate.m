@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginVC.h"
+#import "Backendless.h"
 
 static NSString *APP_ID = @"1AF96738-4152-D9B3-FF2C-F8D540E38800";
 static NSString *SECRET_KEY = @"F969B80D-BA53-A010-FF52-0134C4562500";
@@ -23,6 +24,7 @@ static NSString *VERSION_NUM = @"v1";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [backendless initApp:APP_ID secret:SECRET_KEY version:VERSION_NUM];
     return YES;
 }
 
